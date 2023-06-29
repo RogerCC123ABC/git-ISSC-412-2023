@@ -37,3 +37,16 @@ Ramas:
 Las ramas nos permiten trabajar con el repositorio sin alterar la estabilidad de la rama principal.
 Como cualquier otra rama hay una local y una remota.
 Las ramas parten de un commit de origen.
+
+Integración de ramas:
+Para este fin, se utiliza la operación "merge". 
+Un merge combian los commits de una rama hacia otra en un solo commit conocido como un "merge commit".
+
+Resolución de conflictos:
+Estrategia:
+1. Merge commit (crea un merge commit con cambios aplicados en el orden que el desarrollador elija).
+2. Rebase: cambia el punto de origen de una rama, resolviendo conflictos durante la operacion. Requiere un "force push"
+para sobreescribir la rama remota.
+
+Pull request:
+Solicita la aprobacion de los cambios en una rama a otro colaborador, previo a la interación de las 2 ramas (merge).
